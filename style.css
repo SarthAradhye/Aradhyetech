@@ -1,0 +1,99 @@
+@font-face
+{
+font-family: NewFont;
+src:url('/AstroSpace-eZ2Bg.ttf')
+}
+@font-face {
+    font-family: GTA;
+    src: url(/batmfa__.ttf);
+}
+@font-face {
+    font-family: banner;
+    src: url(/SteinerLight-JR1o.ttf);
+}
+@font-face {
+    font-family: Bandar;
+    src: url('/Bandar-K7EO7.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    
+}
+header{
+    display: flex;
+    background-color: #abc3d3;
+    font-family: GTA;
+}
+header h1{
+    position: relative;
+    top: 10%;
+    font-size: 2vw;
+}
+nav a{
+    padding-left: 14%;
+    padding-right: 14%;
+    background-color: #bccdd9;
+    font-family: NewFont;
+}
+nav{
+    background-color: #bccdd9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.heroimage{
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/pexels-pixabay-356056.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.herotext{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: banner;
+    font-weight: bold;
+    font-size: 2vw;
+}
+#bannerbtn{
+    padding:2%;
+    background-color: #abc3d3;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.services{
+    font-family: Bandar;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    box-shadow:5px 5px 5px 5px aquamarine;
+    padding:1%;
+}
+.container:hover{
+    box-shadow: 6px 6px 6px 6px aqua;
+}
+.cardimg img{
+    width: 200px;
+    height:auto;
+}
+.man {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+}
