@@ -125,9 +125,11 @@ nav a:hover::after{
 .founder{
   display: flex;
   align-items: flex-start;
+    line-height:25px;
 }
 #Contact{
   width: 100%;
   height: 100vh;
-
 } 
+.view{
+    line-height:25px;
