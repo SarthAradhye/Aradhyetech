@@ -130,10 +130,32 @@ nav{
 }
 .cards{
   padding: 2%;
-  border-radius: 3%;
+  border-radius: 25px;
   margin-right: 3%;
   margin-left: 3%;
   background-color: rgba(0, 0, 0, 0.3);
-  
+  max-height: 90vh;
 }
-
+.content{
+  text-align: center;
+}
+.content img{
+  margin-bottom: 4%;
+}
+.content h1{
+  margin-bottom: 2%;
+}
+.content p{
+  margin-bottom: 4%;
+}
+.btn{
+  background-color: aqua;
+  padding: 5%;
+  border-radius: 25px;
+}
+.btn a{
+  text-decoration: none;
+  color:#333333;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+}
