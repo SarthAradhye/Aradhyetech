@@ -8,11 +8,14 @@ body{
     scroll-behavior: smooth;
     scroll-behavior: smooth;
     padding-top: 2%;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 :root{
     --df-width:min(1200px,90vw)
@@ -113,24 +116,24 @@ nav{
 }
 #Products{
     height: 100vh;
-    background-image:url(/images/temples.jpeg);
-    background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    background-color: #D4AF37;
 }
-.Container{
-    padding: 3%;
-    display:inline-flex;
-    justify-content: space-evenly;
+#Products h1{
+  text-align: center;
+}
+.container{
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-evenly;
 }
 .cards{
-    display:grid;
-    top: 50%;
-    background-color: rgb(255, 255, 255, 0.3);
-    border-radius: 30px;
-    max-width: 30%;
-    margin-top: 4%;
-    font-family: 'Righteous', sans-serif;
+  padding: 2%;
+  border-radius: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
+  background-color: rgba(0, 0, 0, 0.3);
+  
 }
-.content{
-    padding: 5%;
-}
+
