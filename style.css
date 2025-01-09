@@ -41,8 +41,12 @@ header .logo img{
     display: flex;
 }
 .logo-text{
+  font-family: "Share Tech", serif;
+}
+header .logo-text{
     display: grid;
     padding-left: 2%;
+    
 }
 nav a{
     text-decoration: none;
@@ -158,4 +162,42 @@ nav{
   color:#333333;
   font-family: 'Times New Roman', Times, serif;
   font-weight:bold;
+}
+#About{
+  min-height: 100vh;
+  text-align: center;
+}
+.something{
+  text-align: center;
+  padding-top: 2%;
+}
+.something h1{
+  font-size: 2.5em;
+}
+.vision{
+  width: 90%;
+  margin: 0 auto;
+  margin-top:2%;
+}
+.vision p{
+  margin-top: 1%;
+}
+.mission{
+  width: 90%;
+  margin: 0 auto;
+  margin-top:2%;
+}
+.mission p{
+  margin-top:1%
+}
+.founder{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.clients .container{
+  margin-top: 2%;
+}
+.clients{
+  margin-top: 2%;
 }
