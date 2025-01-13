@@ -33,7 +33,7 @@
                     <a href="#Home">Home</a>
                     <a href="#Products">Products</a>
                     <a href="#About">About</a>
-                    <a onclick="inProgress()" style="cursor: pointer;">Contact</a>
+                    <a href="#Contact" onclick="inProgress()" style="cursor: pointer;">Contact</a>
                 </nav>
             </header>
             <section class="banner">
@@ -233,6 +233,7 @@
             </div>
         </div>
         <div id="Contact">
+            
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -246,15 +247,15 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
             
-                <button type="submit">Send Message</button>
-              </form>
+                <button onclick="inProgress()">Send Message</button>
+            </form>
             
-              <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
-                Your message has been sent successfully!
-              </div>
-              <div id="errorMessage" style="display: none; color: red; margin-top: 20px;">
-                There was an error sending your message. Please try again.
-              </div>
+            <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
+               Your message has been sent successfully!
+            </div>
+            <div id="errorMessage" style="display: none; color: red; margin-top: 20px;">
+               There was an error sending your message. Please try again.
+            </div>
         </div>
         <footer>
 
