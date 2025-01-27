@@ -6,7 +6,6 @@ body{
     font-size: 16px;
     background: #F8F5F0;
     scroll-behavior: smooth;
-    scroll-behavior: smooth;
     padding-top: 2%;
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -203,6 +202,10 @@ nav{
 }
 .clients .container{
   margin-top: 2%;
+}
+.clients .container a{
+  text-align: center;
+  text-decoration: none;
 }
 .clients{
   margin-top: 2%;
