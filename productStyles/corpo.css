@@ -83,3 +83,66 @@ nav{
     padding-top: 5%;
     align-items: center;
 }
+#Motive{
+    height: 100vh;
+    padding: 5%;
+    text-align: center;
+    background-image: linear-gradient(#CEAA5B,#fff);
+}
+.content{
+    padding: 5%;
+    background: #ffffffbd;
+    border-radius: 25px;
+}
+#Motive h1{
+    padding-bottom: 2%;
+}
+#Reach{
+    height: 100vh;
+    align-content: center;
+    display: inline-block;
+    background-image: linear-gradient(to right, #CEAA5B 50%, #fff 50%);
+    color: #000;
+}
+form{
+    color: #000;
+    display: grid;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 20%;
+    padding: 10%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  

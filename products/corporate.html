@@ -33,19 +33,59 @@
         </div>
     </div>
     <div id="Motive">
-        <h1>
-            Our Motive.
-        </h1>
-
-        <p>
-            No matter what business it is, every business needs a change. And that change is what we bring to the table.
-            We understand your needs and provide you a <b>expert team</b> for your technical needs. You might <b>need an
-                App</b> or you may <b>need a website</b> we got all covered. We make hardcoded websites for our clients
-            and make sure that website are doing what they aare ment to. We have made website for <a
-                href="https://medivyapaar.com">Medivyapaar a web platform for doctors and suppliers</a> and also have
-            worked with Himachal Pradesh Police and Rajasthan police as a service to the nation.
-        </p>
+        <div class="content">
+            <h1>
+                Our Motive.
+            </h1>
+    
+            <p>
+                No matter what business it is, every business needs a change. And that change is what we bring to the table.
+                We understand your needs and provide you a <b>expert team</b> for your technical needs. You might <b>need an
+                    App</b> or you may <b>need a website</b> we got all covered. We make hardcoded websites for our clients
+                and make sure that website are doing what they are ment to. We are currently working with Trivikram Soft to develop their Healthcare B2B Marketplace project named <a href="https://medivyapaar.com">medivyapaar.com</a> and also have
+                worked with <b>Himachal Pradesh Police and Rajasthan police</b> as a service to the nation. The websites we make are secure and deliver a great performance.
+                For our clients we use <b>latest technologies</b> and make sure that the website is <b>responsive</b>. 
+                The technologies we use mostly are:
+                
+                    <li><b>Next Js</b></li>
+                    <li><b>MERN Stack</b></li>
+                    <li><b>React Js</b></li>
+                    <li><b>SQL db</b></li>
+                    <LI><B>Object detection technology</B></LI>
+                    <li><b>Java</b></li>
+                    <li><b>Flutter</b></li>
+                
+                Even if you come to us with a <b>unique idea</b> we will make sure that it is <b>implemented</b>.
+            </p>
+        </div>
     </div>
+    <div id="Reach">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="number">Mobile number:</label>
+            <input type="number" id="number" name="number" placeholder="Your mobile number" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message/requirement here" rows="5" required></textarea>
+        
+            <button onclick="inProgress()">Send Message</button>
+        </form>
+        
+        <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
+           Your message has been sent successfully!
+        </div>
+        <div id="errorMessage" style="display: none; color: red; margin-top: 20px;">
+           There was an error sending your message. Please try again.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
