@@ -97,6 +97,7 @@ nav{
     background-color: rgb(255, 255, 255 ,0.5);
     border-radius: 30px;
     margin-top: 1%;
+    
 }
 .content p{
     padding: 1%;
@@ -125,3 +126,9 @@ button{
 button:hover{
     background-color: #cacaca;
 }
+#Vishwalaksha{
+    height: 100vh;
+    background-image: url(/images/vishwalaksha.jpg);
+    background-size: cover;
+}
+
