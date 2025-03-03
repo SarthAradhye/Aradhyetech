@@ -83,6 +83,7 @@ nav{
     padding-top: 5%;
     align-items: center;
     background-color: #333333;
+    padding-left: 10%;
 }
 .Images:hover .item:not(:hover){
     filter: grayscale(1) blur(5px);
