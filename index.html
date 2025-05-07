@@ -220,7 +220,10 @@
         </div>
         <div id="Contact">
             
-            <form id="contactForm">
+            <form id="contactForm"
+            action="https://formspree.io/f/mvgaropn"
+            method="POST"
+            >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
             
@@ -233,7 +236,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" placeholder="How Can We Assist You Today?" rows="5" required></textarea>
             
-                <button onclick="inProgress()">Send Message</button>
+                <button type="submit">Send Message</button>
             </form>
             
             <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
