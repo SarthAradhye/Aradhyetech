@@ -104,6 +104,30 @@ nav{
     background-image: linear-gradient(to right, #CEAA5B 50%, #fff 50%);
     color: #000;
 }
+.corpProducts{
+    height: 100vh;
+}
+.cards{
+    display:flex;
+    justify-content: space-around;
+}
+.card{
+    width: 25%;
+    align-content: center;
+    height: 600px;
+    padding: 3%;
+    border: #000 solid;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.card-content{
+    display: grid;
+    line-height: 2em;
+}
+.card-content img{
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
 form{
     color: #000;
     display: grid;
