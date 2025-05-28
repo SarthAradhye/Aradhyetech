@@ -79,6 +79,9 @@ nav{
       0 0 102px #CEAA5B,
       0 0 151px #CEAA5B;
 }
+.crousal .timer{
+    text-shadow:none;
+}
 .crousal img{
     padding-top: 5%;
     align-items: center;
