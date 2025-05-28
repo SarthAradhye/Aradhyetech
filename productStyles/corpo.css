@@ -169,4 +169,13 @@ form{
   textarea {
     resize: none;
   }
-  
+.sale-img{
+    justify-content: center;
+}
+.sale-img a{
+    text-decoration: none;
+    color: beige;
+}
+.sale-img img{
+    border-radius: 15px;
+}
