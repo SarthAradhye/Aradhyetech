@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AradhyeTech</title>
+    <title>AradhyeTech | Change matters</title>
     <style>
-        body{
-            height: 100%;
-            width: 100%;
+        body {
             margin: 0;
             padding: 0;
             background-image: url(/newAradhyeTechlogo.png);
-            background-repeat: no-repeat; /* Prevents repetition */
-            background-size:contain;
+            background-size: cover;
             background-position: center;
-            font-family: Poppins, sans-serif; 
+            background-repeat: no-repeat;
         }
-        .center{
+
+        header {
+            background-color: #ceaa5b;
+        }
+
+        header img {
+            border-radius: 100px;
+        }
+
+        .logoh {
+            font-family: "Share Tech", sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 5px;
+        }
+
+        .center {
             margin-top: 10%;
             width: 35%;
             margin-left: 25%;
@@ -25,33 +40,75 @@
             padding: 10%;
             border: solid black 2px;
             border-radius: 15px;
+            font-family: Panton;
         }
-        button{
-            padding: 2%;
-            transition: 1s;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: 600;
-            font-size: 1em;
-            border-radius: 15px;
-        }
-        button:hover{
-            padding-left: 10%;
-            padding-right: 10%;
+        .timer{
+            font-size: 3em;
             background-color: #ceaa5b;
+            padding: 2%;
+            border-radius: 5px;
+        }
 
+        @font-face {
+            font-family: Panton;
+            src: url(/Panton-LightCaps.otf);
         }
     </style>
-    <link rel="icon" href="/newAradhyeTechlogo.png" type="image/icon type">
 </head>
+
 <body>
+    <header>
+        <div class="logoh">
+            <img src="/newAradhyeTechlogo.png" alt="Aradhyetech changinging lifes using technology" width="120"
+                height="120">
+            <div class="logotxt">
+                <h1>AradhyeTech</h1>
+                <h4>Change matters</h4>
+            </div>
+        </div>
+    </header>
+
     <div class="center">
-        <h1>Sorry Our website having remakover! Thanks for stopping by hope you have a good day!</h1>
-        <button onclick="Contact()">Get contact</button>
+        <h1>New website coming live in</h1>
+        <h1 class="timer" id="timer">00:00:00</h1>
     </div>
+
     <script>
-        function Contact(){
-            alert("Mobile number: 8652103136 email:sartharadhye@aradhyetech.online")
+        function getNext7PM() {
+            const now = new Date();
+            const next5AM = new Date();
+
+            next5AM.setHours(19, 0, 0, 0); // Set to 5:00:00.000 AM
+
+            if (now >= next5AM) {
+                // If it’s already past 5 AM today, set to 5 AM tomorrow
+                next5AM.setDate(next5AM.getDate() + 1);
+            }
+
+            return next5AM;
         }
+
+        function updateCountdown() {
+            const now = new Date();
+            const end = getNext7PM();
+            const diff = end - now;
+
+            if (diff <= 0) {
+                document.getElementById("timer").textContent = "00:00:00";
+                return;
+            }
+
+            const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
+            const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+            const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+
+            document.getElementById("timer").textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // initial call
     </script>
 </body>
+
 </html>
