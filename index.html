@@ -76,16 +76,16 @@
     <script>
         function getNext7PM() {
             const now = new Date();
-            const next5AM = new Date();
+            const next7PM = new Date();
 
             next5AM.setHours(19, 0, 0, 0); // Set to 5:00:00.000 AM
 
-            if (now >= next5AM) {
+            if (now >= next7PM) {
                 // If it’s already past 5 AM today, set to 5 AM tomorrow
-                next5AM.setDate(next5AM.getDate() + 1);
+                next7PM.setDate(next5AM.getDate() + 1);
             }
 
-            return next5AM;
+            return next7PM;
         }
 
         function updateCountdown() {
