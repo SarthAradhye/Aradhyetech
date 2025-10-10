@@ -1,83 +1,99 @@
-body{
+body {
     padding: 0%;
-    margin:0;
+    margin: 0;
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
     transition: 1s ease-in-out;
 }
-.backgroundImage{
+
+.backgroundImage {
     width: 100%;
     height: 100vh;
     position: absolute;
     z-index: -1;
 }
-.backgroundImage img{
+
+.backgroundImage img {
     width: 100%;
     height: 100vh;
 }
-#Home h1{
+
+#Home h1 {
     font-family: Panton;
 }
-header{
+
+header {
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
     color: #fff;
 }
-header img{
+
+header img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
     border: black solid 2px;
     margin-right: 10px;
 }
-.logo{
+
+.logo {
     display: flex;
 }
-nav{
+
+nav {
     width: 400px;
     font-size: 1.2em;
     padding: 1%;
     background-color: rgba(255, 255, 255, 0.701);
 }
-nav a{
+
+nav a {
     color: black;
     text-decoration: none;
     margin-left: 10px;
     transition: 0.5s;
     padding: 10px;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #fca211af;
 }
-.homeCont{
+
+.homeCont {
     height: 80vh;
 }
-.homeWrapper{
+
+.homeWrapper {
     padding: 5%;
-    background-color: #ffffffbb;
+    background-color: #ffffff7a;
     margin: 5%;
     border-radius: 10px;
 }
-#Services{
+
+#Services {
     background-color: #14213D;
     height: 100vh;
-    
+    padding: 2%;
 }
-#Services h1{
+
+#Services h1 {
     color: #fff;
 }
-#Services a{
+
+#Services a {
     color: #fff;
 }
-.cardCollection{
+
+.cardCollection {
     display: flex;
     overflow-x: scroll;
     justify-content: space-evenly;
     scrollbar-width: 3px;
 }
-.card{
+
+.card {
     width: 300px;
     height: 500px;
     border-radius: 10px;
@@ -88,68 +104,134 @@ nav a:hover{
     text-align: center;
     background-color: #e5e5e5;
 }
-.cardCont{
+
+.cardCont {
     padding: 10px;
 }
-.cardCont img{
+
+.cardCont img {
     width: 200px;
     height: 200px;
 }
-button{
+
+button {
     padding: 10px;
     border-radius: 20px;
-    background-color:#fca311;
+    background-color: #fca311;
     font-weight: 600;
     font-family: Panton;
 }
+
+#About {
+    position: relative;
+}
 .aboutCont{
+    background-color: #e5e5e5a6;
+    margin: 2%;
+}
+.backgroundImgAbt {
+    position: absolute;
+    z-index: -2;
+    top: 20%;
+    left: 33%;
+}
+
+.backgroundImgAbt img {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+}
+
+@keyframes spin {
+    0% {}
+
+    100% {
+        transform: rotateY('360deg');
+        -webkit-transform: rotateY(360deg);
+        /* For older versions of Chrome, Safari */
+        -moz-transform: rotateY(360deg);
+        /* For older versions of Firefox */
+        -ms-transform: rotateY(360deg);
+        /* For older versions of IE */
+        -o-transform: rotateY(360deg);
+        
+    }
+}
+
+.aboutCont {
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.abouttxt {
+    max-width: 600px;
+    background-color: rgba(222, 184, 135, 0.472);
     padding: 5%;
 }
-.abouttxt{
-    text-align: center;
-}
+
+/* 
 .aboutCont .card{
     margin-left: 33%;
-}
-#Contact{
+} */
+#Contact {
     min-height: 100vh;
     align-items: center;
     background-color: #fca311;
+    padding: 2%;
 }
-.contactCard{
+
+.contactCard {
     margin: 5%;
     background-color: #e5e5e5;
     padding: 5%;
     border-radius: 10px;
     height: 600px;
 }
-.getQuote{
+
+.getQuote {
     background-color: #ffcf81;
     padding: 2%;
 }
-form{
+
+form {
     display: grid;
     gap: 10%;
 }
-label{
+
+label {
     display: grid;
 }
-footer{
+
+footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 3%;
     margin-top: 3%;
 }
+
 @media (max-width:600px) {
-    header{
+    header {
         display: grid;
         justify-self: center;
     }
-    .aboutCont .card{
-        margin-left: 0;
+
+    .backgroundImgAbt {
+        left: 0;
+    }
+
+    .aboutCont {
+        display: grid;
+    }
+
+    .abouttxt {
+        width: 300px;
     }
 }
+
 @font-face {
     font-family: Panton;
     src: url(/Panton-LightCaps.otf);
