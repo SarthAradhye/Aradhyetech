@@ -126,7 +126,7 @@ button {
     position: relative;
 }
 .aboutCont{
-    background-color: #e5e5e5a6;
+    background-color: #e5e5e581;
     margin: 2%;
 }
 .backgroundImgAbt {
@@ -168,7 +168,7 @@ button {
 
 .abouttxt {
     max-width: 600px;
-    background-color: rgba(222, 184, 135, 0.472);
+    background-color: rgba(222, 184, 135, 0.367);
     padding: 5%;
 }
 
