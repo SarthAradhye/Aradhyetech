@@ -1,7 +1,7 @@
 body {
     padding: 0%;
     margin: 0;
-    font-family: Poppins, sans-serif;
+    font-family: Tech, sans-serif;
     scroll-behavior: smooth;
     transition: 1s ease-in-out;
 }
@@ -40,6 +40,7 @@ header img {
 
 .logo {
     display: flex;
+    font-family: Panton;
 }
 
 nav {
@@ -85,7 +86,10 @@ nav a:hover {
 #Services a {
     color: #fff;
 }
-
+p{
+    font-family: Tech2;
+    font-size: 1em;
+}
 .cardCollection {
     display: flex;
     overflow-x: scroll;
@@ -95,7 +99,7 @@ nav a:hover {
 
 .card {
     width: 300px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
     padding: 1%;
     margin: 1%;
@@ -214,11 +218,16 @@ footer {
 }
 
 @media (max-width:600px) {
+    body{
+        width: 100%;
+    }
     header {
         display: grid;
         justify-self: center;
     }
-
+    #Services{
+        height: 120vh;
+    }
     .backgroundImgAbt {
         left: 0;
     }
@@ -235,4 +244,12 @@ footer {
 @font-face {
     font-family: Panton;
     src: url(/Panton-LightCaps.otf);
+}
+@font-face {
+    font-family: Tech;
+    src: url(/ShareTechMono-Regular.ttf);
+}
+@font-face {
+    font-family: Tech2;
+    src: url(/gnf.regular.ttf);
 }

@@ -1,12 +1,13 @@
-const date= new Date()
+//declaring all libraries imported
+const express = require('express')
+const mongoose = require('mongoose')
+const path = require('path')
+const port = 3050
 
-const hours = date.getHours()
-const minutes = date.getMinutes()
+//creating express application
 
-if (hours => 17){
-    var element = document.getElementsByClassName("backgroundImage");
-    element.style.backgroundColor ="#000138"
-}else{
-    var element = document.getElementsByClassName("backgroundImage");
-    element.style.backgroundColor ="#a4560dff"
-}
+const app = express()
+
+app.listen(port , ()=>{
+    console.log("Welcome shriman")
+})
