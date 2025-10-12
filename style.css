@@ -29,6 +29,9 @@ header {
     justify-content: space-between;
     color: #fff;
 }
+header p{
+    font-family: Panton;
+}
 
 header img {
     width: 100px;
