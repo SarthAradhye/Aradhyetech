@@ -89,8 +89,11 @@ nav a:hover {
 #Services a {
     color: #fff;
 }
+#Services p{
+    font-family: Poppins;
+}
 p{
-    font-family: Tech2;
+    font-family: Tech;
     font-size: 1em;
 }
 .cardCollection {
